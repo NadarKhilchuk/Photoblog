@@ -1,0 +1,17 @@
+.header {
+	margin-top: 71px;
+	margin-bottom: 92px;
+    &-list{
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+        justify-content: center;
+    }
+    &-link {
+        text-transform: uppercase;
+        color: $veryDarkWhiteColor;
+        &:hover{
+            color: $blueColor;
+        }
+    }
+}

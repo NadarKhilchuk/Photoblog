@@ -42,6 +42,11 @@ body {
 	color: var(--blue-color);
 }
 
+
+
+/*!main  */
+/*!Gallery  */
+
 .gallery {
 	margin-bottom: 66px;
 }
@@ -138,13 +143,13 @@ body {
 	transform: translateY(-50%);
 }
 
-/*!gallery-article  */
-
-
 .gallery-artilce-thumb {
 	position: relative;
 	overflow: hidden;
 }
+/*!gallery-article  */
+
+
 
 
 .article-home-product-overlay {
