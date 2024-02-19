@@ -20,3 +20,7 @@ body {
 //!import pages
 @import './pages/home.scss';
 
+
+// &display=swap обязково в силкі шрифту
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic&display=swap');

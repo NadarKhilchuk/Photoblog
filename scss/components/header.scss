@@ -1,13 +1,33 @@
 .header {
-	margin-top: 71px;
+    margin-top: 71px;
 	margin-bottom: 92px;
-    &-list{
+    // .header-navigation
+
+    &-navigation {
+    }
+
+    // .header__container
+
+    &__container {
+    }
+
+    // .header__list
+
+    &__list {
         display: flex;
         flex-direction: row;
         gap: 100px;
         justify-content: center;
     }
-    &-link {
+
+    // .header__item
+
+    &__item {
+    }
+
+    // .header__link
+
+    &__link {
         text-transform: uppercase;
         color: $veryDarkWhiteColor;
         &:hover{
@@ -15,3 +35,13 @@
         }
     }
 }
+.navigation {
+
+    // .navigation-header
+
+    &-header {
+    }
+}
+
+
+

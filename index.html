@@ -23,20 +23,20 @@
 	<body>
 		<header class="header">
 			<!-- Контейнер -->
-			<div class="header-container container">
-				<nav class="header-navigation">
-					<ul class="header-list">
-						<li class="header-item">
-							<a href="/" class="header-link">lifestyle</a>
+			<div class="header__container container">
+				<nav class="header-navigation navigation-header   ">
+					<ul class="header__list">
+						<li class="header__item">
+							<a href="/" class="header__link">lifestyle</a>
 						</li>
-						<li class="header-item">
-							<a href="/" class="header-link">photo</a>
+						<li class="header__item">
+							<a href="/" class="navigation header__link navigation header__link active">photo</a>
 						</li>
-						<li class="header-item">
-							<a href="/" class="header-link">musik</a>
+						<li class="header__item">
+							<a href="/" class="navigation header__link navigation header__link hidden">musik</a>
 						</li>
-						<li class="header-item">
-							<a href="/" class="header-link">travel</a>
+						<li class="header__item">
+							<a href="/" class="header__link">travel</a>
 						</li>
 					</ul>
 				</nav>
@@ -44,33 +44,33 @@
 			<!-- Кінець Контейнер -->
 		</header>
 		<main class="gallery">
-			<section class="gallery-section">
+			<section class="gallery__section">
 				<!-- Контейнер -->
-				<div class="gallery-container container">
+				<div class="gallery__container container">
 					<!-- Обгортка для статей -->
-					<div class="gallery-articles">
+					<div class="gallery__articles">
 						<!-- Стаття 1 -->
-						<article class="gallery-article">
-							<div class="gallery-artilce-thumb">
+						<article class="gallery__article article-gallery">
+							<div class="article-gallery__thumb">
 							<img
-								class="gallery-image"
+								class="article-gallery__image"
 								src="./img/musiсfestival.jpg"
 								alt="Music festival"
 							/>
-							<div class="article-home-product-overlay">
-								<div class="article-home-product-actions">
-								  <button aria-label="У вибране" class="article-home-product-item">
-									<svg class="article-home-product-icon">
+							<div class="article-gallery__overlay">
+								<div class="article-gallery__actions">
+								  <button aria-label="У вибране" class="article-gallery__item">
+									<svg class="article-gallery__icon">
 									  <use href="./img/sprite.svg#delete"></use>
 									</svg>
 								  </button>
-								  <button aria-label="У вибране" class="article-home-product-item">
-									<svg class="article-home-product-icon">
+								  <button aria-label="У вибране" class="article-gallery__item">
+									<svg class="article-gallery__icon">
 									  <use href="./img/sprite.svg#work"></use>
 									</svg>
 								  </button>
-								  <button aria-label="У вибране" class="article-home-product-item">
-									<svg class="article-home-product-icon">
+								  <button aria-label="У вибране" class="article-gallery__item">
+									<svg class="article-gallery__icon">
 									  <use href="./img/sprite.svg#camera"></use>
 									</svg>
 								  </button>
@@ -78,12 +78,12 @@
 							  </div>
 							</div>
 							
-							<div class="gallery-body">
-								<div class="gallery-name">LIFESTYLE</div>
-								<h2 class="gallery-title">
+							<div class="article-gallery__body">
+								<div class="article-gallery__name">LIFESTYLE</div>
+								<h2 class="article-gallery__title">
 									More than just a music festival
 								</h2>
-								<p class="gallery-text">
+								<p class="article-gallery__text">
 									Lorem ipsum dolor sit amet, consectetur
 									adipisicing elit. Suscipit earum, eaque fuga
 									laudantium voluptates, cum reprehenderit
