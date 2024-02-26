@@ -1,0 +1,22 @@
+.button {
+    display: inline-flex;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: $blueColor;
+    overflow: hidden;
+
+}
+
+.button-success {
+    @extend %button;
+   background-color: green;
+padding: 20px;
+
+@include bordered(orange);
+}
+.button-error { 
+    @extend %button;
+   background-color: red;
+
+   @include bordered(purple);
+}

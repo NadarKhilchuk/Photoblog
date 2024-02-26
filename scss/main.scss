@@ -1,7 +1,5 @@
 //!Import base 
-@import './base/variables.scss';
-@import './base/reset.scss';
-
+@import './base/reset.scss', './base/variables.scss';
 body {
 	font-family: 'Playfair Display', serif;
 	font-weight: Regular;
@@ -16,9 +14,13 @@ body {
 	padding: 0 15px;
 }
 //! Import components
+@import './components/buttons.scss';
 @import './components/header.scss';
 //!import pages
 @import './pages/home.scss';
+//!import utils 
+@import './utils/placeholders.scss';
+@import './utils/mixins.scss';
 
 
 // &display=swap обязково в силкі шрифту

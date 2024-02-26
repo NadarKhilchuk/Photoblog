@@ -1,4 +1,6 @@
 /* Reset and base styles  */
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -80,7 +82,10 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input:focus, input:active {
+input:focus,
+input:active,
+button:focus,
+button:active {
   outline: none;
 }
 
@@ -112,21 +117,29 @@ body {
   padding: 0 15px;
 }
 
+.button-error, .button-success {
+  display: inline-flex;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #03a9f4;
+  overflow: hidden;
+}
+
 .header {
   margin-top: 71px;
   margin-bottom: 92px;
 }
-.header-list {
+.header__list {
   display: flex;
   flex-direction: row;
   gap: 100px;
   justify-content: center;
 }
-.header-link {
+.header__link {
   text-transform: uppercase;
   color: #7d7d7d;
 }
-.header-link:hover {
+.header__link:hover {
   color: #03a9f4;
 }
 
@@ -217,7 +230,39 @@ body {
 .gallery-button:hover::after {
   transform: translateY(-50%);
 }
-.gallery .article-home-product-overlay {
+.gallery__section {
+  margin-bottom: 66px;
+}
+.gallery__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery__articles {
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 130px;
+  justify-content: space-between;
+}
+.gallery__article {
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 62px;
+}
+.article-gallery__thumb {
+  position: relative;
+  overflow: hidden;
+}
+.article-gallery__image {
+  width: 420px;
+  height: 280px;
+}
+.article-gallery__overlay {
   transform: translateX(-100%);
   background-color: #03a9f4;
   width: 100%;
@@ -226,4 +271,7 @@ body {
   top: 0;
   left: 0;
   transition: transform 500ms cubic-bezier(0.83, -0.08, 0.32, 1) 100ms;
+}
+.article-gallery__overlay .gallery-artilce:hover {
+  transform: translateX(0);
 }
