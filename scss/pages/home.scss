@@ -1,5 +1,6 @@
 .gallery {
-
+    &__cycle {
+    }
 	margin-bottom: 66px;
     &-container{
         display: flex;
@@ -227,4 +228,55 @@
     }
 }
 .button {
+}
+
+
+
+
+
+
+
+
+
+.cycle {
+}
+.cycle-gallary {
+
+    // .cycle-gallary__container
+
+    &__container {
+    }
+
+    // .cycle-gallary__list
+
+    &__list {
+    }
+
+    // .cycle-gallary__item
+
+    &__item {
+    }
+
+    // .cycle-gallary__text
+
+    &__text {
+@include text(14px, red, 140%)
+        &:nth-child(1) {
+color: black;
+        }
+        &:nth-child(2) {
+            color: red;
+                    }
+       &:nth-child(3) {
+        color:lightsalmon;
+            }
+    }
+}
+
+$colors: black, red, lightsalmon;
+
+@each $color in $colors {
+.cycle-gallary__text.#color($color){
+color: #color;
+}
 }
